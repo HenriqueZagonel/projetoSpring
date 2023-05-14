@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+/* Box sizing border-box para todos os elementos */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remover margens e preenchimentos padrão */
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Remover estilos de lista */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remover sublinhado padrão de links */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Definir fonte e cor padrão */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Definir largura padrão para imagens */
+  img {
+    width: 100%;
+    height: auto;
+  }
+  

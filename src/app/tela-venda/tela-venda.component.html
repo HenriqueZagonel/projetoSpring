@@ -1,0 +1,55 @@
+<div class="header">
+    <div class="header1">
+    <button class="menu-button">Menu</button>
+    <input type="text" class="search-input" placeholder="Pesquisar ou digitar código">
+</div>
+<div class="header2">
+<input type="text" class="customer-input" placeholder="CPF cliente">
+    <input type="button" class="search-client" value="Pesquisar CPF">
+</div>
+</div>
+  <div class="product-list">
+    <!-- Lista de produtos bipados -->
+   <ul>
+     <li *ngFor="let produto of produtos" class="product-item">
+      <h3>{{produto.codigo}}.</h3>
+      <p>{{produto.descricao}}</p>
+      <label >estoque
+      <p>{{produto.estoque}}</p>
+   </label>
+   <label >qnt:
+   <input type="number">
+</label> 
+<div class="delete-icon">
+   
+   <svg width="700pt" height="700pt" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+      <path d="m262.5 105h-87.5c-9.6602 0-17.5 7.8398-17.5 17.5s7.8398 17.5 17.5 17.5h17.5v332.5c0 13.93 5.5312 27.281 15.383 37.117 9.8359 9.8516 23.188 15.383 37.117 15.383h210c13.93 0 27.281-5.5312 37.117-15.383 9.8516-9.8359 15.383-23.188 15.383-37.117v-332.5h17.5c9.6602 0 17.5-7.8398 17.5-17.5s-7.8398-17.5-17.5-17.5h-87.5v-17.5c0-28.996-23.504-52.5-52.5-52.5h-70c-28.996 0-52.5 23.504-52.5 52.5zm-35 35h245v332.5c0 4.6367-1.8359 9.1016-5.1289 12.371-3.2695 3.293-7.7344 5.1289-12.371 5.1289h-210c-4.6367 0-9.1016-1.8359-12.371-5.1289-3.293-3.2695-5.1289-7.7344-5.1289-12.371zm52.5 70v210c0 9.6602 7.8398 17.5 17.5 17.5s17.5-7.8398 17.5-17.5v-210c0-9.6602-7.8398-17.5-17.5-17.5s-17.5 7.8398-17.5 17.5zm105 0v210c0 9.6602 7.8398 17.5 17.5 17.5s17.5-7.8398 17.5-17.5v-210c0-9.6602-7.8398-17.5-17.5-17.5s-17.5 7.8398-17.5 17.5zm17.5-122.5v17.5h-105v-17.5c0-9.6602 7.8398-17.5 17.5-17.5h70c9.6602 0 17.5 7.8398 17.5 17.5z" fill-rule="evenodd"/>
+     </svg>
+   </div>
+
+</li> 
+   </ul>
+
+
+  </div>
+  <div class="total">
+   <div class="footer">
+   
+    <div class="footer-total">
+     <label >sub-total
+        <h3 class="subtotal">R$100,00</h3>
+     </label>   
+    
+     <label >desconto
+        <h3 class="subtotal">R$0,00</h3>
+     </label>  
+     <label >total
+        <h3 class="subtotal">R$100,00</h3>
+     </label>  
+    <button class="avancar-button">Avançar venda</button>
+    </div>
+   </div>
+    
+  </div>
+  
+  
